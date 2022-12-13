@@ -52,7 +52,7 @@ def compress_chars(string):
     compressed = ''
     while index != len(string):
         count = 1
-        while index < len(string) - 1 and string[index] == string[index + 1]:\
+        while index < len(string) - 1 and string[index] == string[index + 1]:
             # Add 1 to index so we can skip through repeats of letter on outer while loop
                 index += 1
             # Add 1 to count to add up the amount of the same character
