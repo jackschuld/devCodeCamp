@@ -18,5 +18,23 @@ def is_happy_number(num):
 
 
 # Task 1 prints
-print(is_happy_number(4))
-print(is_happy_number(13))
+# print(is_happy_number(4))
+# print(is_happy_number(13))
+
+
+
+# TASK 2: Prime Numbers
+
+def prime_printer_range(start, end):
+    # The outer loop creates a list of numbers to loop through
+    for num in range(start, end+1):
+        # The inner loop checks if num is divisible by any other number than 1 and itself
+        for i in range(2, num+1):
+            if num == i:
+                print(num)
+            elif num % i == 0:
+                break
+        
+            
+# Task 2 print
+# prime_printer_range(1, 100)
