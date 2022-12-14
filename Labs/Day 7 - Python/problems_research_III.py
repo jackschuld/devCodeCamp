@@ -38,3 +38,25 @@ def prime_printer_range(start, end):
             
 # Task 2 print
 # prime_printer_range(1, 100)
+
+
+
+# TASK 3: Fibonacci
+
+# Enter number to start from and how many iterations
+def fibonacci(start, count):
+        prev = 0
+        curr = start
+        if start == 0:
+            start = 1
+        while count != 0:
+            print(curr)
+            start += prev
+            prev = curr
+            curr = start
+            count -= 1
+
+
+# Task 3 print
+# fibonacci(0, 8)
+# fibonacci(10, 6)
