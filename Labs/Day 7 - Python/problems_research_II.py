@@ -18,10 +18,16 @@ def reverse_string(string):
 # Write code that takes a string as input and capitalize the first letter of each word. Words will be separated by only one space. i.e. “hello world” should be outputted as “Hello World”
 
 def capitalize_strings(string):
-    return string.title()
+    final = ''
+    for i in range(len(string)):
+        if string[i] == string[0] or string[i - 1] == ' ':
+            final += string[i].upper()
+        else:
+            final += string[i]
+    return final
 
 # Task 2 print
-#  print(capitalize_strings("hello world, i am jack."))
+# print(capitalize_strings("hello world, i am jack."))
 
 
 # Task 3: Palindrome
