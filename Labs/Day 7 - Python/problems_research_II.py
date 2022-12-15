@@ -17,27 +17,33 @@ def reverse_string(string):
 
 # Write code that takes a string as input and capitalize the first letter of each word. Words will be separated by only one space. i.e. “hello world” should be outputted as “Hello World”
 
-def capitalize_strings(string):
-    string = [i for i in string]
-    for i in range(len(string)):
-        if string[i] == string[0] or string[i - 1] == ' ':
-            string[i] = string[i].upper()
-    return ''.join(string) 
+# def capitalize_strings(sentence):
+#     words = sentence.split()
+
+#     for word in words:
+#         word = word[0].upper() + word[1:]
+#     return ' '.join(words)
 
 
-# Task 2 - Easier syntax to read, but more data:
+# Task 2
 # def capitalize_strings(string):
-    # final = ''
-    # for i in range(len(string)):
-    #     if string[i] == string[0] or string[i - 1] == ' ':
-    #         final += string[i].upper()
-    #     else:
-    #         final += string[i]
-    # return final
+#     string = [i for i in string]
+#     for i in range(len(string)):
+#         if string[i] == string[0] or string[i - 1] == ' ':
+#             string[i] = string[i].upper()
+#     return ''.join(string) 
+
+
+# Task 2:
+def capitalize_strings(string):
+    for num in range(len(string)):
+        if num == 0 or string[num - 1] == ' ':
+            string = string.replace(string[num], string[num].upper(), 1)
+    return ''.join(string) 
   
 
 # Task 2 print
-print(capitalize_strings("hello world, i am jack."))
+print(capitalize_strings("hello warld, i am andy."))
 
 
 # Task 3: Palindrome
