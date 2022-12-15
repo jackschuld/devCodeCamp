@@ -14,7 +14,7 @@ def create_dict(location_string, restaurants_list, transportations_list, enterta
         'Entertainments': entertainments_list
     }
 
-
+# Uncomment for TASK 1:
 # chicago = create_dict(destinations[0], restaurants, transportations, entertainments)
 # milwaukee = create_dict(destinations[1], restaurants, transportations, entertainments)
 # cleveland = create_dict(destinations[2], restaurants, transportations, entertainments)
@@ -75,6 +75,10 @@ def gen_destination(destination_key):
 # Management called and wants to include the climate with each destination.
 # Add a climate field to each destination dictionary that describes its climate (temperate, tropical, etc)
 # Refactor your code to include the climate alongside the destination name, wherever it’s printed in the terminal.
+objects = [chicago, milwaukee, cleveland]
+for object in objects:
+    object['Climate'] = 'humid continental'
+
 
 
 ### TASK 4: Accessing Dictionary Values with Variables ###
@@ -82,6 +86,8 @@ def gen_destination(destination_key):
 # Create a variable for each key of a destination dictionary
 # Import the entire keys module into your refactored module (do not individually import each key variable from the module)
 # Use the key variables from that module to access the values from the destination dictionaries instead of hard-coded strings.
+
+
 
 
 ### BONUS: Nested Data ###

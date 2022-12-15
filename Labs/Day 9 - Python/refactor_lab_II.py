@@ -2,16 +2,16 @@ from random import choice
 from data_lab_II import gen_destination
 
 destinations = ['Chicago', 'Milwaukee', 'Cleveland']
-# restaurants = ['Pizza', 'Italian', 'Sushi', 'Seafood', 'Burgers']
-# transportations = ['Car', 'Uber/Lyft']
-# entertainments = ['Tourist Site', 'Explore Downtown', 'Bars/Clubs']
+# TASK 1: restaurants = ['Pizza', 'Italian', 'Sushi', 'Seafood', 'Burgers']
+# TASK 1: transportations = ['Car', 'Uber/Lyft']
+# TASK 1: entertainments = ['Tourist Site', 'Explore Downtown', 'Bars/Clubs']
 
 def gen_lists():
     destination = gen_object(choice(destinations))
     restaurant = choice(destination['Restaurants'])
     tranportation = choice(destination['Transportations'])
     entertainment = choice(destination['Entertainments'])
-    destination = destination['Location']
+    destination = destination['Location'] + ' - ' + destination['Climate']
 
 
     return f'''
