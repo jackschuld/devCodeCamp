@@ -54,13 +54,13 @@ for key in dict_user_profile:
 # Last name
 # Relation to you
 
-# Once you have stored the List of Dictionary items, write a function/method that will iterate over the List and print off the First Name and Relation of each person in the List.
-
 dict_my_fam = {
     'First Name': ['Mia', 'Parson', 'Danny', 'Molly', 'Bridie'],
     'Last Name': ['Sienko', 'Schuld', 'Schuld', 'Schld', 'Doyle'],
     'Relation to me': ['Girlfriend', 'Dog', 'Brother', 'Sister', 'Sister']
 }
+
+# Once you have stored the List of Dictionary items, write a function/method that will iterate over the List and print off the First Name and Relation of each person in the List.
 
 for value in dict_my_fam['First Name']:
     value_index = dict_my_fam['First Name'].index(value)
