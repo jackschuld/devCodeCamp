@@ -54,14 +54,42 @@ for key in dict_user_profile:
 # Last name
 # Relation to you
 
-dict_my_fam = {
-    'First Name': ['Mia', 'Parson', 'Danny', 'Molly', 'Bridie'],
-    'Last Name': ['Sienko', 'Schuld', 'Schuld', 'Schld', 'Doyle'],
-    'Relation to me': ['Girlfriend', 'Dog', 'Brother', 'Sister', 'Sister']
-}
+mia = {
+    'First Name': 'Mia',
+    'Last Name': 'Sienko',
+    'Relation to me': 'Girlfriend'
+    }
+
+parson = {
+    'First Name': 'Parson',
+    'Last Name': 'Schuld',
+    'Relation to me': 'Dog'
+    }
+
+danny = {
+    'First Name': 'Danny',
+    'Last Name': 'Schuld',
+    'Relation to me': 'Brother'
+    }
+
+molly = {
+    'First Name': 'Molly',
+    'Last Name': 'Schuld',
+    'Relation to me': 'Sister'
+    }
+
+bridie = {
+    'First Name': 'Bridie',
+    'Last Name': 'Schuld',
+    'Relation to me': 'Sister'
+    }
+
+fam = [mia, parson, danny, molly, bridie]
+
 
 # Once you have stored the List of Dictionary items, write a function/method that will iterate over the List and print off the First Name and Relation of each person in the List.
 
-for value in dict_my_fam['First Name']:
-    value_index = dict_my_fam['First Name'].index(value)
-    print(f'{value} is my {dict_my_fam["Relation to me"][value_index]}')
+for value in fam:
+    name = value['First Name']
+    relation = value['Relation to me']
+    print(f'{name} is my {relation}')
