@@ -87,7 +87,37 @@ for object in objects:
 # Import the entire keys module into your refactored module (do not individually import each key variable from the module)
 # Use the key variables from that module to access the values from the destination dictionaries instead of hard-coded strings.
 
+def store_keys(dict):
+    return list(dict)
 
+def create_key_variable(key_list, index):
+    return key_list[index]
+
+# Location key:
+list_of_keys = store_keys(chicago)
+dict_location_key = create_key_variable(list_of_keys, 0)
+location_key_values = chicago[dict_location_key]
+
+print(dict_location_key) # prints Location
+print(location_key_values)
+
+# Restuarants key:
+dict_restaurant_key = create_key_variable(list_of_keys, 1)
+restaurant_key_values = chicago[dict_restaurant_key]
+
+print(dict_restaurant_key) # prints Restaurant
+print(restaurant_key_values)
+
+
+
+
+# Or can use this function to grab the value:
+def grab_key_values(dict, index_of_key):
+    key_list = store_keys(dict)
+    dict_key = create_key_variable(key_list, index_of_key)
+    return dict[dict_key]
+
+print(grab_key_values(chicago, 2)) # Prints Transportation list
 
 
 ### BONUS: Nested Data ###
