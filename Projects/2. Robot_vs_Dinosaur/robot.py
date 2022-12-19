@@ -1,13 +1,13 @@
 class Robot:
     
-    def __init__ (self, name, health, attack_power):
+    def __init__ (self, name, health, active_weapon):
         self.name = name
         self.health = health
-        self.attack_power = attack_power
+        self.active_weapon = active_weapon
     
 
     def attack(self, dinosaur):
         print('\nRobot\'s turn!')
         input(f'Press enter to have the robot attack {dinosaur.name}')
-        dinosaur.health -= self.attack_power.attack_power
+        dinosaur.health -= self.active_weapon.attack_power
         print(f'{dinosaur.name}\'s health is now {dinosaur.health}')

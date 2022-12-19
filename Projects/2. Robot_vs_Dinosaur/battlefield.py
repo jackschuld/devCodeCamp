@@ -1,4 +1,5 @@
 import time
+from random import randint
 from robot import Robot
 from dinosaur import Dinosaur
 from weapon import Weapon
@@ -63,16 +64,15 @@ class Battlefield:
 
     def display_winner(self):
         if self.dinosaur.health > 0:
-            print(f'{self.dinosaur.name}, the dinosaur, is the winner!')
+            print(f'{self.dinosaur.name}, the dinosaur, is the winner with {self.dinosaur.health} remaining!')
         else:
-            print(f'{self.robot.name}, the robot, is the winner!')
-
+            print(f'{self.robot.name}, the robot, is the winner with {self.robot.health} remaining!')
 
 
 
 
 # Instance game
-game1 = Battlefield(Robot('Arnold', 100, Weapon('Sawed-off Shotgun', 20)), Dinosaur('Sue', 100, 20))
+game1 = Battlefield(Robot('Arnold', randint(80, 121), Weapon('Sawed-off Shotgun', randint(10, 41))), Dinosaur('Sue', randint(90, 131), randint(5, 31)))
 
 # Run game instance
 game1.run_game()
