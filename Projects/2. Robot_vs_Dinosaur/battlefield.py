@@ -6,9 +6,9 @@ from weapon import Weapon
 
 class Battlefield:
     
-    def __init___ (self):
-        self.robot = Robot('Arnold', 100, Weapon('Sawed-off Shotgun', 20))
-        self.dinosaur = Dinosaur('Sue', 20, 100)
+    def __init___ (self, robot, dinosaur):
+        self.robot = robot
+        self.dinosaur = dinosaur
     
 
     def run_game(self):
@@ -19,11 +19,11 @@ class Battlefield:
 
     def display_welcome(self):
         time.sleep(1)
-        print('############################################## ROBOT ###############################################')
+        print('############################################## ROBOT ################################################')
         time.sleep(1)
-        print('################################################ VS ################################################')
+        print('################################################ VS #################################################')
         time.sleep(1)
-        print('############################################# DINOSAUR #############################################')
+        print('############################################# DINOSAUR ##############################################')
         time.sleep(1)
         print('''                   
                ,  ;:._.-`''.                                                       ______
@@ -70,7 +70,7 @@ class Battlefield:
 
 
 # Instance game
-game = Battlefield()
+game1 = Battlefield(Robot('Arnold', 100, Weapon('Sawed-off Shotgun', 20)), Dinosaur('Sue', 20, 100))
 
 # Run game instance
-game.run_game()
+game1.run_game()
