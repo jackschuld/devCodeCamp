@@ -77,6 +77,8 @@ class Battlefield:
             print(f'{self.robot.name}, the robot, is the winner with {self.robot.health} remaining health!\n\n')
         time.sleep(1)
         print('########################################################################################################')
+        print('https://www.asciiart.eu/animals/reptiles/dinosaurs - art by Joan Stark')
+        print('https://ascii.co.uk/art/terminator - artist unknown')
 
 
 
