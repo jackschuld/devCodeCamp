@@ -19,9 +19,9 @@ class Battlefield:
 
     def display_welcome(self):
         time.sleep(1)
-        print('############################################## ROBOT ################################################')
+        print('############################################## ROBOT ################################################\n')
         time.sleep(1)
-        print('################################################ VS #################################################')
+        print('################################################ VS #################################################\n')
         time.sleep(1)
         print('############################################# DINOSAUR ##############################################')
         time.sleep(1)
@@ -43,6 +43,8 @@ class Battlefield:
       ';. '`'::'`''  .'`'                       \\\//    ===//         \  \      \       /
     ,'   `';;:,..::;`'`'                 
 , .;`      `'::''`                  
+
+########################################################################################################
 ''')
         time.sleep(1)
 
@@ -50,13 +52,13 @@ class Battlefield:
 
 
     def battle_phase(self):
-        is_dino_turn = True
+        turn = 0
         while self.robot.health > 0 and self.dinosaur.health > 0:
-            if is_dino_turn:
+            if turn % 2 == 0:
                 self.dinosaur.attack(self.robot)
             else:
                 self.robot.attack(self.dinosaur)
-            is_dino_turn != is_dino_turn
+            turn += 1
 
 
     def display_winner(self):
@@ -70,7 +72,7 @@ class Battlefield:
 
 
 # Instance game
-game1 = Battlefield(Robot('Arnold', 100, Weapon('Sawed-off Shotgun', 20)), Dinosaur('Sue', 20, 100))
+game1 = Battlefield(Robot('Arnold', 100, Weapon('Sawed-off Shotgun', 20)), Dinosaur('Sue', 100, 20))
 
 # Run game instance
 game1.run_game()

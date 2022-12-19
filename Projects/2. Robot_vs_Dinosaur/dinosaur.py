@@ -7,5 +7,7 @@ class Dinosaur:
 
     
     def attack(self, robot):
-        input(f'Press enter to attack {robot.name}, the robot')
-        robot.health -= self.attack
+        print('\nDinosaur\'s turn!')
+        input(f'Press enter to have the dinosaur attack {robot.name}')
+        robot.health -= self.attack_power
+        print(f'{robot.name}\'s health is now {robot.health}')
