@@ -6,7 +6,7 @@ from weapon import Weapon
 
 class Battlefield:
     
-    def __init___ (self, robot, dinosaur):
+    def __init__ (self, robot, dinosaur):
         self.robot = robot
         self.dinosaur = dinosaur
     
