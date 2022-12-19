@@ -72,9 +72,9 @@ class Battlefield:
     def display_winner(self):
         time.sleep(1)
         if self.dinosaur.health > 0:
-            print(f'{self.dinosaur.name}, the dinosaur, is the winner with {self.dinosaur.health} remaining!\n\n')
+            print(f'{self.dinosaur.name}, the dinosaur, is the winner with {self.dinosaur.health} remaining health!\n\n')
         else:
-            print(f'{self.robot.name}, the robot, is the winner with {self.robot.health} remaining!\n\n')
+            print(f'{self.robot.name}, the robot, is the winner with {self.robot.health} remaining health!\n\n')
         time.sleep(1)
         print('########################################################################################################')
 
@@ -82,7 +82,7 @@ class Battlefield:
 
 
 # Instance game
-game1 = Battlefield(Robot('Arnold', randint(80, 126), Weapon('Sawed-off Shotgun', randint(10, 36))), Dinosaur('Sue', randint(90, 131), randint(15, 31)))
+game1 = Battlefield(Robot('Arnold', randint(80, 126), [Weapon('Punch', randint(16, 26)), Weapon('Sawed-off Shotgun', randint(10, 36)), Weapon('Grenade', randint(5, 46))]), Dinosaur('Sue', randint(90, 131), randint(15, 31)))
 
 # Run game instance
 game1.run_game()
