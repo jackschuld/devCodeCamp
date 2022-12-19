@@ -5,7 +5,7 @@ class Robot:
         self.health = health
         self.active_weapon = active_weapon
     
-
+    # Displays enemies health and has user click enter to have the enemy attacked. Method works the same on dinosaur.py
     def attack(self, dinosaur):
         print('\nRobot\'s turn!\n')
         print(f'{dinosaur.name}\'s health: {dinosaur.health}')
