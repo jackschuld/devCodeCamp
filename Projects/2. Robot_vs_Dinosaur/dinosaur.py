@@ -11,4 +11,4 @@ class Dinosaur:
         print(f'{robot.name}\'s health: {robot.health}')
         input(f'Press enter to have the dinosaur attack {robot.name}')
         robot.health -= self.attack_power
-        print(f'{robot.name}\'s health is now {robot.health}')
+        print(f'{robot.name}\'s health is now {robot.health}\n')

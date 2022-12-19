@@ -16,15 +16,16 @@ class Battlefield:
         self.display_welcome()
         self.battle_phase()
         self.display_winner()
+    
 
-
+    # Displays an introduction screen on the terminal with keyboard art of the dinosaur vs the robot
     def display_welcome(self):
         time.sleep(1)
-        print('############################################## ROBOT ################################################\n')
+        print('############################################## ROBOT ##################################################\n')
         time.sleep(1)
-        print('################################################ VS #################################################\n')
+        print('################################################ VS ###################################################\n')
         time.sleep(1)
-        print('############################################# DINOSAUR ##############################################')
+        print('############################################# DINOSAUR ################################################')
         time.sleep(1)
         print('''                   
                ,  ;:._.-`''.                                                       ______
@@ -44,6 +45,8 @@ class Battlefield:
       ';. '`'::'`''  .'`'                       \\\//    ===//         \  \      \       /
     ,'   `';;:,..::;`'`'                 
 , .;`      `'::''`                  
+       
+        DINOSAUR                                                                   ROBOT
 ''')
         time.sleep(1)
         print('########################################################################################################')
@@ -51,10 +54,14 @@ class Battlefield:
 
 
 
-
+    # Will switch between the dinosaur and robot to take turns
     def battle_phase(self):
-        turn = 0
+        # Randomly assign who goes first
+        turn = randint(0, 2)
+        # While both are alive
         while self.robot.health > 0 and self.dinosaur.health > 0:
+            time.sleep(1)
+            # Dinosaur goes on even numbers, Robot on odds
             if turn % 2 == 0:
                 self.dinosaur.attack(self.robot)
             else:
@@ -63,10 +70,13 @@ class Battlefield:
 
 
     def display_winner(self):
+        time.sleep(1)
         if self.dinosaur.health > 0:
-            print(f'{self.dinosaur.name}, the dinosaur, is the winner with {self.dinosaur.health} remaining!')
+            print(f'{self.dinosaur.name}, the dinosaur, is the winner with {self.dinosaur.health} remaining!\n\n')
         else:
-            print(f'{self.robot.name}, the robot, is the winner with {self.robot.health} remaining!')
+            print(f'{self.robot.name}, the robot, is the winner with {self.robot.health} remaining!\n\n')
+        time.sleep(1)
+        print('########################################################################################################')
 
 
 
