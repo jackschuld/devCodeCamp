@@ -44,9 +44,9 @@ class Battlefield:
       ';. '`'::'`''  .'`'                       \\\//    ===//         \  \      \       /
     ,'   `';;:,..::;`'`'                 
 , .;`      `'::''`                  
-
-########################################################################################################
 ''')
+        time.sleep(1)
+        print('########################################################################################################')
         time.sleep(1)
 
 
@@ -72,7 +72,7 @@ class Battlefield:
 
 
 # Instance game
-game1 = Battlefield(Robot('Arnold', randint(80, 121), Weapon('Sawed-off Shotgun', randint(10, 41))), Dinosaur('Sue', randint(90, 131), randint(5, 31)))
+game1 = Battlefield(Robot('Arnold', randint(80, 126), Weapon('Sawed-off Shotgun', randint(10, 36))), Dinosaur('Sue', randint(90, 131), randint(15, 31)))
 
 # Run game instance
 game1.run_game()
