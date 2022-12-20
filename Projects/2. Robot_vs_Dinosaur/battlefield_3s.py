@@ -1,11 +1,11 @@
 import time
 from random import randint
 
-class Battlefield:
+class Battlefield_3s:
     
-    def __init__ (self, robot, dinosaur):
-        self.robot = robot
-        self.dinosaur = dinosaur
+    def __init__ (self, robots, dinosaurs):
+        self.robots = robots
+        self.dinosaurs = dinosaurs
     
 
     def run_game(self):
@@ -18,11 +18,11 @@ class Battlefield:
     # Displays an introduction screen on the terminal with keyboard art of a dinosaur vs a robot
     def display_welcome(self):
         time.sleep(1)
-        print('############################################## ROBOT ##################################################\n')
+        print('############################################## ROBOTS #################################################\n')
         time.sleep(1)
         print('################################################ VS ###################################################\n')
         time.sleep(1)
-        print('############################################# DINOSAUR ################################################')
+        print('############################################# DINOSAURS ###############################################')
         time.sleep(1)
         print('''                   
                ,  ;:._.-`''.                                                       ______
@@ -48,34 +48,47 @@ class Battlefield:
         time.sleep(1)
         print('########################################################################################################')
         time.sleep(1)
+        print('########################################################################################################')
 
 
 
-    # Will switch between the dinosaur and robot to take turns
+    # Will switch between the dinosaurs and robots to take turns
     def battle_phase(self):
         # Randomly assign who goes first
-        turn = randint(1, 2)
-        # While both are alive
-        while self.robot.health > 0 and self.dinosaur.health > 0:
+        turn = randint(0, 1)
+        fleet = self.robots.fleet
+        herd = self.dinosaurs.herd
+
+        while len(fleet) > 0 and len(herd) > 0:
             time.sleep(1)
             # Dinosaur goes on even numbers, Robot on odds
+            turn_index_fleet = turn % len(fleet)
+            turn_index_herd = turn % len(herd)
             if turn % 2 == 0:
-                self.dinosaur.attack(self.robot)
+                herd[turn_index_herd].attack(fleet[turn_index_fleet])
+                if fleet[turn_index_fleet].health < 1:
+                    print(f'KO - {fleet[turn_index_fleet].name}')
+                    fleet.pop(turn_index_fleet)
             else:
-                self.robot.attack(self.dinosaur)
+                fleet[turn_index_fleet].attack(herd[turn_index_herd])
+                if herd[turn_index_herd].health < 1:
+                    print(f'KO - {herd[turn_index_herd].name}')
+                    herd.pop(turn_index_herd)
+                if fleet[turn_index_fleet].health < 1:
+                    print(f'KO - {fleet[turn_index_fleet].name}')
+                    fleet.pop(turn_index_fleet)
             turn += 1
+            print('########################################################################################################')
 
 
     def display_winner(self):
         time.sleep(1)
-        if self.dinosaur.health > 0:
-            print(f'{self.dinosaur.name}, the dinosaur, is the winner with {self.dinosaur.health} remaining health!\n\n')
-        elif self.robot.health > 0:
-            print(f'{self.robot.name}, the robot, is the winner with {self.robot.health} remaining health!\n\n')
-        else:
-            print('No survivors!')
+        if len(self.dinosaurs.herd) > 0:
+            print(f'The dinosaurs are the winner with {len(self.dinosaurs.herd)} remaining!\n\n')
+        elif len(self.robots.fleet) > 0:
+            print(f'The robots are the winner with {len(self.robots.fleet)} remaining!\n\n')
         time.sleep(1)
-    
+
 
     def display_credits(self):
         print('[GAME OVER]\n')
