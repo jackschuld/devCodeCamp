@@ -4,7 +4,7 @@ ______________________________________
 
 **Explanation of game rules:**
 
-Rock crushes Scissors
+**Rock** crushes **Scissors**
 
 Scissors cuts Paper 
 
