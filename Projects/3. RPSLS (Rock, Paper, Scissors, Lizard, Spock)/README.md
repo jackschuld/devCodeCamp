@@ -2,24 +2,24 @@
 Rock, Paper, Scissors, Lizard, Spock
 ______________________________________
 
-**Explanation of game rules:**
+## Explanation of game rules:
 
 **Rock** crushes **Scissors**
 
-Scissors cuts Paper 
+**Scissors** cuts **Paper** 
 
-Paper covers Rock
+**Paper** covers **Rock**
 
-Rock crushes Lizard
+**Rock** crushes **Lizard**
 
-Lizard poisons Spock
+**Lizard** poisons **Spock**
 
-Spock smashes Scissors
+**Spock** smashes **Scissors**
 
-Scissors decapitates Lizard
+**Scissors** decapitates **Lizard**
 
-Lizard eats Paper
+**Lizard** eats **Paper**
 
-Paper disproves Spock
+**Paper** disproves **Spock**
 
-Spock vaporizes Rock
+**Spock** vaporizes **Rock**
