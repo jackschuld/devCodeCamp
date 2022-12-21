@@ -1,7 +1,6 @@
 # RPSLS
 Rock, Paper, Scissors, Lizard, Spock
-
-
+______________________________________
 
 **Explanation of game rules:**
 
