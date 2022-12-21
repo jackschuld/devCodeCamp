@@ -1,8 +1,8 @@
 # RPSLS
-Rock, Paper, Scissors, Lizard, Spock
+#### Rock, Paper, Scissors, Lizard, Spock
 ______________________________________
 
-## Explanation of game rules:
+### Explanation of game rules:
 
 **Rock** crushes **Scissors**
 
