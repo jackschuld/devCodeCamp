@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jack Schuld's devCodeCamp HTML Worksheet</title>
+        <style> body { font-family: Arial, Helvetica, sans-serif; } </style>
+    </head>
+
+    <body>
+
+        <br>
+
+        <header>
+            <h1>devCodeCamp HTML Worksheet</h1>
+        </header>
+        
+        <br>
+
+        <main>
+            <section>
+                <h2>Section Overview</h2>
+
+                <p>
+                    This worksheet will help introduce you to some of the main concepts of HTML. You will learn:
+                </p>
+
+                <ul>
+                    <li>
+                        <a href="#paragraphs">Paragraphs and Headers</a>
+                    </li>
+                    <li>
+                        <a href="#lists">Lists and Tables</a>
+                    </li>
+                    <li>
+                        <a href="#attributes">Attributes</a>
+                    </li>
+                    <li>
+                        <a href="#hyperlinks">Hyperlinks</a>
+                    </li>
+                    <li>
+                        <a href="#images">Images</a>
+                    </li>
+                    <li>
+                        <a href="#semantic">Semantic Elements</a>
+                    </li>
+                    <li>
+                        <a href="#inline">In-line and block elements</a>
+                    </li>
+                </ul>
+
+                <p>
+                    This worksheet is intended to be open in two programs: VS Code and your preferred web browser. To open it in your browser, find the index.html file in your File Explorer (Finder on Mac) and double click it-- it should open in your system's default browser.
+                </p>
+
+                <p>
+                    Feel free to read through the text in your browser, but there will be times where you are switching between the browser and VS Code, needing to examine a line of text in both programs. This might feel awkward at first, but you want to get used to being able to track down the code responsible for the content you're seeing on the pages you're building.
+                </p>
+
+                <p>
+                    To start, go back to the index.html file in VS Code and alter the &lt;title&gt; tag in line 5 in the &lt;head&gt; section at the top of the page to change the name of this document to be "YourName's devCodeCamp HTML Worksheet."
+                </p>
+
+                <p>
+                    This will change the name of this page in your browser tab. But the change will not happen automatically, there are two things you will need to do first:
+                </p>
+
+                <ol>
+                    <li>
+                        <p>Save the file in VS Code</p>
+                    </li>
+                    <li>
+                        <p>Refresh the page in the browser.</p>
+                    </li>
+                </ol>
+
+                <p>
+                    Make sure you get in the habit of these two steps, otherwise you will not see the changes you're making to the webpage!
+                </p>
+
+            </section>
+
+            <br>
+            <br>
+
+            <section id="paragraphs">
+
+                <h2>Section 1 - Paragraphs and Headers</h2>
+
+                <p>
+                    Most basic text you want to show up on a page should be enclosed with &lt;p&gt;&lt;/p&gt; tags, the "p" standing for "paragraph".
+                </p>
+
+                <p>
+                    Note: Because of this, you cannot just type "&lt;p&gt;" into the text of a page and get it to show up-- it will think you are adding HTML markup and start a new paragraph tag! That is why you see the escape characters in this paragraph "&-l-t-;"" (less than) and "&-g-t-;"" (greater than) to get those symbols to show up as text. These are called "escape characters".
+                </p>
+
+                <p>
+                    Add your own &lt;p&gt; tag element below this line. You can write anything you'd like, but starting a new language with the phrase "Hello world!" is good luck!
+                </p>
+
+                <p>
+                    Hello world!
+                </p>
+
+                <p>
+                    Once we introduce CSS styling, you will have many more tools to change the size, color, font, and other aspects of your text. But there is a fast way to change your text just using HTML: Heading tags!
+                </p>
+
+                <p>
+                    These work very similar to paragraph tags, using the letters h1 through h6 in place of the p. They are meant to be used to signify headings of sections on a webpage, and bring more attention to text.
+                </p>
+
+                <p>
+                    Alter the following lines to use their corresponding "h" tag. Remember that you will need to have the opening and closing tags match. Non-matching tags might lead to unpredicatable behavior by the browser.
+                </p>
+
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+                <p>Paragraph</p>
+
+                <p>
+                    Now that you've seen Heading tags in action, go back to the main heading at the start of the worksheet and change it to an h1 tag. Then, change all the section headings you come across to h2s.
+                </p>
+
+                <p>Isn't that better?</p>
+
+            </section>
+
+            <br>
+            <br>
+
+            <section id="lists">
+
+                <h2>Section 2 - Lists and Tables</h2>
+
+                <h3>Subsection a. - Lists</h3>
+
+                <p>Lists are a quick way to organize a sequence of items. There are two types of lists:</p>
+
+                <ul>
+                    <li>
+                        <p>Ordered Lists</p>
+                    </li>
+                    <li>
+                        <p>Unordered Lists</p>
+                    </li>
+                </ul>
+
+                <p>
+                    Look at the above section in the HTML to see an Unordered List in action! There is also one at the top of the page, in the Section Overview.
+                </p>
+
+                <p>
+                    Notice that the entire list itself is enclosed between and opening and closing &lt;ul&gt; (unordered list) tag. Then, each item in the list is enclosed in a &lt;li&gt;(list item) tag. Both parts are essential here: the &lt;ul&gt; defines when the list starts and ends (we don't want the browser to think the entire page is part of the list!), and then we need an &lt;li&gt; for each separate thing we want listed out.
+                </p>
+
+                <p>
+                    Create your own Unordered List below this line, list out your 3 favorite movies.
+                </p>
+
+                <ul>
+                    <li>Lego Movie</li>
+                    <li>Doubt</li>
+                    <li>Remember the Titans</li>
+                </ul>
+
+                <p>
+                    Ordered lists work just like Unordered lists, but they use a &lt;ol&gt; tag instead of &lt;ul&gt;. Change the Unordered List you just created into an Ordered List. The &lt;li&gt; tags can remain the same!
+                </p>
+
+                <br>
+
+                <h3>Subsection b. - Tables</h3>
+
+                <p>
+                    Tables are very similar in structur to lists. There is an opening and closing &lt;table&gt; tag, and inside, there are &lt;tr&gt; (table row) tags to designate the different rows. However, unlike lists, which only have a single item in each row, a table is also split into columns, which allows a row to contain multiple cells of data.
+                </p>
+
+                <p>
+                    We split a single &lt;tr&gt; into its multiple columns using the &lt;td&gt; (table data) tag.
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Star Trek</th>
+                        <th>Star Wars</th>
+                    </tr>
+                    <tr>
+                        <td>Picard</td>
+                        <td>Kenobi</td>
+                    </tr>
+                    <tr>
+                        <td>Riker</td>
+                        <td>Skywalker</td>
+                    </tr>
+                    <tr>
+                        <td>Crusher</td>
+                        <td>Organa</td>
+                    </tr>
+                </table>
+
+                <p>
+                    Compare the above table to the code that creates it.
+                </p>
+
+                <p>
+                    Once CSS is introduced, you will be able to style a table better and give it a border to surround each cell. But for now, there is one more useful thing we can add to this table: a Header row.
+                </p>
+
+                <p>
+                    A Header row in a table is just like other rows. It is still enclosed with a &lt;tr&gt; tag, but it should be the first row inside the table, and it will use &lt;tr&gt; rather than &lt;td&gt; to define its cells.
+                </p>
+
+                <p>
+                    Add a Header row in the table above, labeling the left column "Star Trek" and the right column "Star Wars". Use the existing rows as guidance, but make sure to use the correct &lt;th&gt; tag.
+                </p>
+
+                <p>
+                    You may also see some tables further organize their sections into &lt;thead&gt; tags to contain the &lt;th&gt; header rows and &lt;tbody&gt; to contain the regular &lt;td&gt; data rows, but this is not required.
+                </p>
+
+                <p>
+                    Before moving on, remember to change your section headings to h2s, and subsection headings to h3s.
+                </p>
+
+            </section>
+
+            <br>
+            <br>
+
+            <section id="attributes">
+                <h2>Section 3 - Attributes</h2>
+
+                <p>
+                    Some tags require more information than just what type of tag it is. This "extra" information is supplied through <b>attributes</b>.
+                </p>
+
+                <p>
+                    Attributes are name=value pairs added inside the element's opening tag. There are many attributes--some can be used on any element, and some are specific to certain elements. The value of attributes will always be enclosed in "quotes". Elements can have multiple attributes!
+                </p>
+
+                <p>
+                    One common element is <b>id</b>. id is a way to uniquely identify an element, since each element can only have a single id, and ids cannot be repeated on different elements. So if we have an element that is written like:
+                </p>
+
+                <p id="Earl">My id is Earl.</p>
+
+                <p>(Be sure to examine the above line in VS Code.)</p>
+
+                <p>
+                    That means there can never be another element on the same .html page that also has an id with the value of "Earl".
+                </p>
+                
+                <div id="target">
+                    <p>
+                        This block of text is enclosed by a &lt;div&gt; element. Divs typically don't have a visual element that can be identified in the browser, so they are often used to create "divisions" in a webpage. We will do more with divs later, but for now, give this div an attribute with the name <b>id</b> and the value <b>"target"</b>. We will shortly be using this id as the target of a hyperlink.
+                    </p>
+                </div>
+            </section>
+
+            <br>
+            <br>
+
+            <section id="hyperlink">
+                <h2>Section 4 - Hyperlinks and Formatting</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+                                <p>
+                                    Find this line on the index.html page in VS Code. It will be easy to spot, it is the paragraph that is tabbed in several extra spaces to the right. Notice that, even though it is tabbed in on the .html file, the text in the browser looks the same as all the others. Also, there are 10+ empty lines above it, yet this not create empty lines on the webpage in the browser? This demonstrates that non-markdown formatting in the .html file does not have any affect on the actual formatting of the webpage content.
+                                </p>
+                                
+                                
+                <p>
+                    So when formatting your .html file, your main concern should be to keep the HTML code easy to understand for other developers. This typically means:
+                </p>
+
+                <ul>
+                    <li>
+                        <p>Keeping opening and closing tags at the same indentation level</p>
+                    </li>
+                    <li>
+                        <p>Adding extra indentation for nested tags</p>
+                    </li>
+                    <li>
+                        <p>Using empty lines to separate groups of related elements.</p>
+                    </li>
+                </ul>
+
+                <p>
+                    The above &lt;ul&gt; is a perfect example of all three of these formatting tips in action. Go back to VS Code to examine it. Always strive you keep your code well-formatted like this. No one wants to work with a sloppy coder!
+                </p>
+
+                <p>
+                    Also take note of the grey lines to the left of the screen in VS Code. When formatted correctly, these grey lines will show the "scope" of a single tag, connecting the opening tag to the closing tag. Additionally, there should be empty space with no line between the closing of one tag and the opening of a "sibling" tag on the same level.
+                </p>
+                
+                <p>
+                    This paragraph's &lt;p&gt; tags are not aligned correctly. Notice how its tags looks different from the other paragraphs surrounding it. Fix the opening and closing tag here so that this paragraph is formatted seemlessly with its siblings!
+                </p>
+                                    
+                <p>
+                    The following section is using many &lt;br&gt; tags to create some buffer space.
+                </p>
+
+                <p>
+                    Be aware that using this many &lt;br&gt; tags is generally not a good practice. Once we get to styling, there will be much better ways to space out your content.
+                </p>
+
+                <p>
+                    "Br" stands for "Break", and it adds a line break in the page, or even with a single paragraph element. Notice that the tags in VSCode are done three different ways, but they all behave the same. This is because, unlike many other HTML tags we've used so far, the br tag does not require an opening and closing tag. Elements like this, which only have an opening tag, are called a "void" or "empty" element. They may contain attributes (we will see this in the img tag later, but they cannot have content placed between an opening and closing tag.
+                </p>
+
+                <p>
+                    You might see a void tag used like &lt;br&gt;, &lt;br/&gt;, or &lt;br /&gt;. In modern HTML, they all behave the same, but &lt;br&gt; is simpler and preferred. Some developers call these "self-closing" tags, which is why they are sometimes written like an opening tag that also contains its own /.
+                </p>
+
+                <p>
+                    Scroll down past all the blank space to continue with the worksheet!
+                </p>
+
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                <br>
+                <br/>
+                <br />
+                
+                <p>
+                    Welcome back! Let's now create a hyperlink that will take us back to the "target" id we created earlier.
+                </p>
+
+                <p>
+                    Hyperlinks use the &lt;a&gt; (anchor) tag. This is another time where we will be using attributes, since we need to tell a link where it should send the user when clicked.
+                </p>
+                
+                <p>
+                    Anchor tags use the <b>href</b> (hypertext reference) attribute to hold the address that a user will be taken to when clicked. This address can be actual website urls like <a href="http://www.google.com">this link which takes you to Google.</a> Or it can route the user to an element on the same page by using the element's id as the href. Here is another hyperlink:
+                </p>
+
+                <p><a href="#Earl">Hey Earl.</a></p>
+
+                <p>
+                    In the browser, hover your mouse over these two link and notice the address pop up in the lower left corner of the browser. Then click the "Hey Earl" link, look at the top line in the browser, then scroll back to this point.
+                </p>
+
+                <p>
+                    Be sure to examine the link in VS Code. Notice that the href is set to <b>#Earl</b>, even though the actual id of the element is just "Earl". Always use the # when referring to an id, but you do not actually name the id itself with a #.
+                </p>
+
+                <p>
+                    Also look up to the browser's address bar if you have not yet. See what has changed? This is the same address that shows when you hover your mouse over the link that took you to that id.
+                </p>
+
+                <p>
+                    Now, create your own link below that will take you back up to the div that you gave the id of "target".
+                </p>
+
+                <p><a href="#target">Target</a></p>
+                
+
+            </section>
+
+            <br>
+            <br>
+
+            <section id="images">
+
+                <h2>Section 5 - Images</h2>
+
+                <p>
+                    Congratulations on making it this far! This plain text website must be very boring to stare at. Let's try to make it a little more exciting by adding an image.
+                </p>
+
+                <p>
+                    Images are placed on a website with the &lt;img&gt; tag. Just like links, image tags need attributes to provide more info. Namely, how to find the image the tag is meant to display.
+                </p>
+
+                <p>There are actually two attributes required for an img tag:</p>
+
+                <ol>
+                    <li>
+                        <p><b>src</b>: The url path to the image file</p>
+                    </li>
+                    <li>
+                        <p><b>alt</b>: A string of text to describe the image for non-visual browsers or if there is a problem with the image loading</p>
+                    </li>
+                </ol>
+
+                <p>It should look like this:</p>
+
+                <p>&lt;img src="url to the image" alt="description of image"&gt;</p>
+
+                <p>
+                    There should be an image called "coffee.jpg" included in this folder. Add it to this page in an img tag below. Since it is in the same folder, you can just enter the filename itself in the src="". Also make sure to come up with a descriptive string for the alt!
+                </p>
+
+                <img src="coffee.jpg" alt="image of coffee beans in cup">
+
+            </section>
+
+            <br>
+            <br>
+
+            <section id="semantic">
+
+                <h2>Section 6 - Semantic Elements</h2>
+
+                <p>
+                    Up until now, we have mostly been using &lt;p&gt; tags to contain our content. The &lt;p&gt; tag is great for housing paragraph text, but as the design of our sites gets more complex, there is need for better ways to organize our content.
+                </p>
+
+                <p>
+                    The most common "container" element is the &lt;div&gt;. This is an easy way to group together parts of your site. 
+                </p>
+
+                <p>
+                    However, there are pros and cons to using divs. Due to them being used so often, they can become a "catch all" that developers overuse when there may be more appropriate elements that could do the same job more elegantly.
+                </p>
+
+                <p>
+                    That is where semantic elements come in. The term <i>Semantics</i> can be defined as "The study of relationships between signs and symbols and what they represent." So "semantic elements" are elements whose names describe their purpose or placement on the webpage--to the developer and the browser.
+                </p>
+
+                <p>
+                    You've hopefully already seen some semantic elements if you've been paying attention! Each "section" of this worksheet is contained within its own &lt;section&gt; tag. Additionally, the main heading of the page is within a &lt;header&gt; (which is distinct from the non-visual &lt;head&gt;).
+                </p>
+
+                <p>Some other semantic elements are:</p>
+
+                <ul>
+                    <li>
+                        <p>&lt;article&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;aside&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;figure&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;footer&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;main&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;nav&gt;</p>
+                    </li>
+                    <li>
+                        <p>&lt;summary&gt;</p>
+                    </li>
+                </ul>
+
+                <p>
+                    Notice that just using a &lt;section&gt; tag does not automatically add any styling. Semantic elements still need to be placed and styled accordingly.
+                </p>
+
+                <p>
+                    Add a &lt;footer&gt; element below this section to say "Completed by YourName". Notice that it gets placed right where the element is! Now make it a true footer by cutting and pasting it to the bottom of the document, after the &lt;main&gt; element (but still inside the &lt;body&gt;)
+                </p>
+
+            </section>
+
+            <br>
+            <br>
+
+            <section id="inline">
+
+                <h2>Section 7 - Inline vs Block</h2>
+
+                <p>
+                    The last thing we'll look at on this project is something that you may or may not have noticed yet.
+                </p>
+
+                <p>
+                    Why is it that <b>some</b> elements are able to <a href="">blend</a> <i>right</i> into others <span>without causing a new line</span>, while other elements <div>definitely</div> <aside>can</aside> not?
+                </p>
+
+                <p>
+                    Be sure to look at the previous sentence in VS Code! Notice all the different element tags nested inside the single &lt;p&gt; tag.
+                </p>
+                
+                <p>
+                    The first few, the &lt;b&gt;, &lt;a&gt;, &lt;i&gt;, and &lt;span&gt;, are all seamlessly integrated into the sentence, while the &lt;div&gt; and &lt;aside&gt; push their words onto new lines, even though there is no differnce in how they are used within the sentence. There are no &lt;br&gt; line breaks, so why is this happening?
+                </p>
+
+                <p>
+                    This is an essential concept to understand in HTML. All elements have a default display value that determines which of these two behaviors they will exhibit.
+                </p>
+
+                <p>
+                    In fact, every body tag you've written or seen so far has done one or the other!
+                </p>
+
+                <p>
+                    <b>Block</b> tags like &lt;p&gt;, &lt;h1&gt;, &lt;div&gt; and &lt;aside&gt; all <b>block</b> out an entire line, which means they start a new line and take up as much page width as they can.
+                </p>
+
+                <p>
+                    Meanwhile, <b>inline</b> elements like &lt;a&gt;, &lt;b&gt;, &lt;img&gt; and &lt;span&gt;do NOT start a new line, and they only take up as much width as their content needs, allowing for several of them to exist on the same line.
+                </p>
+
+                <p>
+                    <div>Change</div> <div>these</div> <div>&lt;span&gt;</div> <div>tags</div> <div>to</div> <div>&lt;div&gt;s</div> <div>to</div> <div>see</div> <div>the</div> <div>difference.</div>
+                </p>
+
+            </section>
+
+            <br>
+            <br>
+
+            <p>
+                Your final task for this sheet is to go back to Section Overview at the top of the page and turn it into a functional NavBar section. To accomplish this, you will need to add ids to the various sections throughout the document, and change the list items into links that will take you to them. That way, this sheet will serve as a handy reference when you build more websites! Also take a look at the available semantic elements and decide which one seems most appropriate for a NavBar, then wrap the whole NavBar in its own semantic element.
+            </p>
+
+            <p>Happy Coding!</p>
+
+            <br>
+            <br>
+            
+        </main>
+        <footer>Completed by Jack Schuld</footer>
+    </body>
+</html>
