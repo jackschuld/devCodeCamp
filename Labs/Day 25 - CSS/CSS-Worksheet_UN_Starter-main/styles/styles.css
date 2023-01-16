@@ -1,0 +1,23 @@
+
+/* This will apply all included styles to the header element */
+header{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* This will apply all included styles to any element which uses the "logo" class*/
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -75px;
+}
+
+/* This will apply any included styles to the body element */
+body{
+
+}
+
+/* Create your own classes below! */

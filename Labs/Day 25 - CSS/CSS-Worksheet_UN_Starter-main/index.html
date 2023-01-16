@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>CSS Worksheet</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>            
+          </ul>
+    </nav>
+
+    <header>
+        <img class="logo" src="images/dccLogo.png" alt="devCodeCamp logo">
+        <h1 class="text header-text">CSS Worksheet</h1>        
+    </header>
+
+    <section>
+        <p>
+            This worksheet is split into different sections, each highlighting a different CSS concept. Your goal is to use CSS to style each of these sections in the desired way, learning some tricks that you will be able to use on your own websites!<br>
+            <br>
+            For this project, you will be adding all your styling inside the styles.css file. Remember that CSS can be applied in 3 ways-- inline, internal, or external. It works the same all 3 ways! So even if you find examples of CSS you like being used inline or internally, you should still implement it on this project by adding it to the external style sheet.<br>
+            <br>
+            Start by finding a more appealing font from <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">here</a> and adding it to the 'font-family' attribute in the empty body selector included in styles.css. Aside from this body selector, all the CSS you add should be using CSS classes rather than element selectors<br>
+            <br>
+            Next, find a <a href="https://www.w3schools.com/Css/css_navbar_horizontal.asp">NavBar style</a> you like and apply it to the example NavBar this page by adding the styling in styles.css. Most NavBar styles work by applying CSS to &lt;ul&gt;, &lt;li&gt;, and &lt;a&gt; elements to style a vertical unordered list into the traditional horizontal NavBar design we're all used to. Once you find an example you like, try to change one or two aspects of it to make it your own--think about color, spacing, or border.<br>
+        </p>
+    </section>
+
+    <section>
+        <p>
+            Create a class to style this &lt;p&gt; element to have a width of 400px, a <b>solid</b> border 1 px thick, and <b>rounded borders</b>. Once you have this class, remember that you can re-use this class anytime you need to create a similar text block! <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>
+            <br>
+            End of box.
+        </p>
+
+        <p>
+            Once you have your rounded borders, you might notice a problem. This can be fixed by adjusting one of the properties of the "box model". Try adjusting each piece of the box model (margin, border, padding) by 20px until the problem is fixed!<br>
+            <br>
+            When the spacing is fixed, add one more property: text-align. Set this to 'justified' and watch what happens to the text when you refresh the page.
+        </p>
+
+    </section>
+
+    <section>
+        <p>
+            Before starting the next section, now would be a good time to choose a subtle background color for the page. Visit <a href="https://www.colorhexa.com/web-safe-colors">ColorHexa</a> to see some options! Be sure to click on a color you like to see the Color Schemes that incorporate it, we will be using other colors that complement the background in order to build a pleasing theme for the page.
+        </p>
+
+        <p class="text-box colors-2">
+            Style this textbox the same as above by using the class you created, but now, add a new class to make it have a background color that complements the color you chose for the page's background. While you're at it, create a second class that has a different complementary color. (We will use this class shortly)<br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>           
+            <br>
+            End of box.
+        </p>        
+    </section>
+
+    <section>
+        <p>
+            This section contains three paragraph blocks. Use the classes you have already created to style them, then use flexbox to place them side by side <b>below</b> this paragraph. Remember you will need to create a container! Try different configurations until they are spaced out in an attractive manner.<br>
+            <br>
+            Then, alternate the color classes you created for the previous section so that the box in the center is the inverse of the boxes on the outside.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>
+            <br>
+            End of box.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>
+            <br>
+            End of box.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>
+            <br>
+            End of box.
+        </p>
+    </section>
+
+    <section>
+
+        <p>
+            This section contains two paragraph blocks. There is an image of a coffee cup inside the "images" folder. Insert the image between the two paragraph blcosk, and style it so that it replicates the size and style of the textboxes you've been using. So this section should look similar to the one above, except with an image in the center rather than a block of text.
+        </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>
+                <br>
+                End of box.
+            </p>
+            
+
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>
+                <br>
+                End of box.
+            </p>
+        </div>
+
+        <p>
+            You might notice that the image seems stretched out, like its aspect ratio is off. Open the coffee.jpg image by itself in a photo app or the browser and you should see the actual size and ratio of the file. One way to fix this is to use the <a href="https://www.w3schools.com/csS/css3_object-fit.asp">object-fit property</a>. Look at the possible values to use, test a few out and determine which value works best to preserve the aspect ratio of this image.
+        </p>
+    </section>
+
+    <section>
+        <p>
+            Here, we have 4 paragraphs. Style this section similar to the previous two, with 3 spaced out columns. But this time, have the center column contain the middle two paragraphs, stacked on top of each other. Hint: Remember you can have flexbox containers inside flexbox containers!
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>
+            <br>
+            End of box.
+        </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>
+                <br>
+                End of box.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>
+                <br>
+                End of box.
+            </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.<br>
+            <br>
+            End of box.
+        </p>
+
+    </section>
+
+        
+    <section>
+        <p>
+            This section contains two empty divs. Create a different class for each div. Once again, select two complimentary colors to use. Set both classes to have a height of "100vh" (viewport height). For one, set its width to "100vw" (viewport width), and for the other, set its width to "100%". Notice the difference between the two. Resize your browser window by opening the browser debugger and dragging the panel to make the page larger and smaller. You'll probably notice a horizontal scrollbar was created, which is not ideal. Which measurement unit is the one creating the scrollbar?<br>
+            When you figure it out, change the offending width to the other measurement to make the scrollbar disappear.
+        </p>
+
+        <div></div>
+        <div></div>
+
+
+        </section>
+    <section>
+        
+        <p>
+            The previous section showed a quick way to make a an element take up the full screen. This can be a useful trick when building single-page websites, which are sites that have all content stacked on top of each other, even though the different sections may each feel thematically like distinct "pages" on their own.<br>
+            <br>
+            Here, there are three more divs. Apply a class to each so that they will take up the full screen, like the previous colored divs. Then, create a new class for each div which will give it a background image, using the included coffee.jpg image.
+        </p>
+
+        <p>
+            For this div, have the background image repeat and "tile" the entire area of the screen:
+        </p>
+        <div></div>
+
+        <p>
+            Have the background image show up as its actual size:
+        </p>
+        <div></div>
+
+        <p>
+            Finally, stretch the background image so that it takes up the entire space: (Use CSS to do this, do not modify the image file's size.)
+        </p>
+        <div></div>
+        
+    </section>
+    
+</body>
+</html>
