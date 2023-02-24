@@ -1,13 +1,16 @@
 # devCodeCamp
-Contains all Labs and Projects I've completed during devCodeCamp
+Contains all Labs and Projects completed during devCodeCamp
 
 
 ## Labs
 - Organized by day and language(s)
     **ie.** "Day 01 - Python"
+    **ie.** "Day 33 - React"
 
 
 ## Projects
-- Contains Projects that were completed for points
-- Organized by order Project was received (except or 00., which contains extra credit)
+- Contains graded projects
+- Organized by order received
     **ie.** "01. First Project"
+    **ie.** "10. YouTubeClone"
+    
